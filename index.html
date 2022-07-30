@@ -17,6 +17,17 @@
     <link rel="manifest" href="/manifest.json">
    
     <title>Vite + React</title>
+
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      window.OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "988fad1b-1e59-4c59-ac04-5c832a308876",
+        });
+      });
+    </script>
+
   </head>
   <body>
     <div id="root"></div>
